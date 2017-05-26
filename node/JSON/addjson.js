@@ -7,12 +7,7 @@ fs.readFile('members.json', 'utf-8', function(err, data) {
   var memberObjectArray = JSON.parse(data);
 //Write data to array using push() method
   memberObjectArray.members.push(
-    { name: "Ryan", email: "ryan.a.stivers@gmail.com", character: "Bepis" },
-    { name: "David", email: "david@gmail.com", character: "Snoozer" },
-    { name: "Brian", email: "brian@gmail.com", character: "Toxin" },
-    { name: "Brendan", email: "brendan@gmail.com", character: "Yobo" },
-    { name: "Rob", email: "rob@gmail.com", character: "MrMcMerrill" },
-    { name: "Isaiah", email: "isaiah@gmail.com", character: "Sprocket" }
+    { }
   );
   //display contents of variable
     console.log(memberObjectArray);
