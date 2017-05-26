@@ -5,7 +5,7 @@ var url = "mongodb://localhost:27017/mydb";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  var myobj = { name: "Ryan", email: "ryan.a.stivers@gmail.com", character: "Bepis" };
+  var myobj = { name: "", email: "", character: "" };
   db.collection("members").insertOne(myobj, function(err, res) {
     if (err) throw err;
     console.log("1 record inserted");
