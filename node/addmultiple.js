@@ -8,12 +8,8 @@ MongoClient.connect(url, function(err, db) {
   if (err) throw err;
   //insert multiple records
   var myobj = [
-    { name: "Ryan", email: "ryan.a.stivers@gmail.com", character: "Bepis" },
-    { name: "David", email: "david@gmail.com", character: "Snoozer" },
-    { name: "Brian", email: "brian@gmail.com", character: "Toxin" },
-    { name: "Brendan", email: "brendan@gmail.com", character: "Yobo" },
-    { name: "Rob", email: "rob@gmail.com", character: "MrMcMerrill" },
-    { name: "Isaiah", email: "isaiah@gmail.com", character: "Sprocket" },
+    { name: "", email: "", character: "" },
+    { name: "", email: "", character: "" },
   ];
   db.collection("members").insert(myobj, function(err, res) {
     if (err) throw err;
