@@ -8,7 +8,7 @@ var url = "mongodb://localhost:27017/mydb";
 MongoClient.connect(url, function(err,db) {
   if (err) throw err;
   //Set query, start with letter "". Case-Sensitive
-  var query = { email: /^r/ };
+  var query = { name: };
   //Query database "members"
   //First argument of find() method is a query object, declared above
   db.collection("members").find(query).toArray(function(err, result) {
